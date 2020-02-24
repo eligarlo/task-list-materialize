@@ -42,7 +42,7 @@ function getTasks() {
         const link = document.createElement('a');
         // Add class
         link.className = 'delete-item secondary-content';
-        // Add icon html 
+        // Add icon html
         link.innerHTML = '<i class="fa fa-remove"></i>';
         // Append the link to li
         li.appendChild(link);
@@ -67,7 +67,7 @@ function addTask(e) {
         const link = document.createElement('a');
         // Add class
         link.className = 'delete-item secondary-content';
-        // Add icon html 
+        // Add icon html
         link.innerHTML = '<i class="fa fa-remove"></i>';
         // Append the link to li
         li.appendChild(link);
@@ -155,7 +155,7 @@ function filterTasks(e) {
 
     document.querySelectorAll('.collection-item').forEach(function (task) {
         const item = task.firstChild.textContent;
-        if (item.toLowerCase().indexOf(text) != -1) {
+        if (item.toLowerCase().indexOf(text) !== -1) {
             task.style.display = 'block';
         } else {
             task.style.display = 'none';
